@@ -1,0 +1,11 @@
+:root{
+    --azulmarinho: #054a91ff;
+    --marinhofraco: #3e7cb1ff;
+    --azulmaisfraco: #81a4cdff;
+    --brancoazulado: #dbe4eeff;
+
+}
+
+body{
+    background: var(--azulmaisfraco)
+}
