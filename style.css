@@ -14,6 +14,9 @@ body{
     font-family: var(--texto);
 }
 
-h1{
-    font-family: var(--titulo);
+header{
+    background-color: var(--azulmarinho); 
+    display: flex;
+    justify-content: space-around;
+    color: var(--brancoazulado);
 }
