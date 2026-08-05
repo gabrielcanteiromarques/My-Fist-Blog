@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
 :root{
     --azulmarinho: #054a91ff;
     --marinhofraco: #3e7cb1ff;
@@ -19,4 +24,12 @@ header{
     display: flex;
     justify-content: space-around;
     color: var(--brancoazulado);
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+    gap: 60px;
+    margin: 10px;
+    font-size: 22px;
 }
