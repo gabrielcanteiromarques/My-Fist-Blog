@@ -29,9 +29,19 @@ header{
 .menu{
     display: flex;
     list-style: none;
-    gap: 60px;
-    margin: 10px;
+    gap: 100px;
+    margin: 30px;
     font-size: 22px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: var(--brancoazulado);
+    font-weight: bold;
+}
+
+.menu a:hover{
+    color: var(--azulmaisfraco);
 }
 
 .img-capa{
