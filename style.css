@@ -26,6 +26,10 @@ header{
     color: var(--brancoazulado);
 }
 
+.logo{
+    width: 15%;
+}
+
 .menu{
     display: flex;
     list-style: none;
@@ -63,4 +67,12 @@ header{
 .saudacao-texto{
     font-family: var(--texto);
     font-size: 20px;
+}
+
+footer{
+    background-color: var(--marinhofraco);
+    color: var(--brancoazulado);
+    font-family: var(--titulo);
+    font-size: 20px;
+    padding: 20px;
 }
