@@ -70,9 +70,13 @@ header{
 }
 
 footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     background-color: var(--marinhofraco);
     color: var(--brancoazulado);
     font-family: var(--titulo);
     font-size: 20px;
-    padding: 20px;
+    text-align: center;
+    padding: 10px;
 }
