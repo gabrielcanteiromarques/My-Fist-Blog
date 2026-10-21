@@ -9,9 +9,9 @@
     --azulmarinho: #054a91ff;
     --marinhofraco: #3e7cb1ff;
     --azulmaisfraco: #81a4cdff;
-    --brancoazulado: #dbe4eeff;
+    --brancoazulado: #dbe4eeff; 
     --titulo: "Lora", serif;
-    --texto: "Cormorant", serif;
+    --texto:  "Cormorant", serif;
 }
 
 body{
@@ -20,22 +20,27 @@ body{
 }
 
 header{
-    background-color: var(--azulmarinho); 
+    background-color: var(--azulmarinho);
     display: flex;
     justify-content: space-around;
+    align-items: center;
     color: var(--brancoazulado);
+    padding: 20px;
 }
 
 .logo{
-    width: 15%;
+    width: 10%;
+    border-radius: 100%;
 }
 
 .menu{
     display: flex;
     list-style: none;
-    gap: 100px;
-    margin: 30px;
-    font-size: 22px;
+    gap: 20px;
+    margin: 10px;
+    color: var(--brancoazulado);
+    text-transform: uppercase;
+    font-size: 14px;
 }
 
 .menu a{
@@ -45,38 +50,55 @@ header{
 }
 
 .menu a:hover{
-    color: var(--azulmaisfraco);
+    color: var(--marinhofraco);
 }
 
 .img-capa{
     width: 100%;
 }
 
-.saudacao{
-    margin: 50px;
+.conteudo{
+    margin: 30px;
+    border: 2px solid var(--azulmarinho);
     padding: 30px;
     text-align: center;
 }
 
-.saudacao-titulo{
+.conteudo-titulo{
     font-family: var(--titulo);
     font-size: 24px;
     padding-bottom: 20px;
+    color: var(--brancoazulado);
 }
 
-.saudacao-texto{
+.conteudo-texto{
     font-family: var(--texto);
-    font-size: 20px;
+    font-size: 18px;
+}
+
+.noticias{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.card{
+    background-color: var(--brancoazulado);
+    border: 1px solid var(--azulmarinho);
+    padding: 20px;
+    text-align: center;
+    max-width: 400px;
+}
+
+.botoes{
+    margin: 15px 0;
 }
 
 footer{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: var(--marinhofraco);
+    background-color: var(--azulmarinho);
     color: var(--brancoazulado);
     font-family: var(--titulo);
     font-size: 20px;
+    padding: 20px;
     text-align: center;
-    padding: 10px;
 }
