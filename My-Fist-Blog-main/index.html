@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog do Gbariel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <img class="logo" src="img/logo.png" alt="Um livro azul com símbolos matemáticos em volta.">
+        </div>
+        <div>
+            <ul class="menu">
+                <a href="index.html"><li>Home</li></a>
+                <a href="#"><li>Artigos</li></a>
+                <a href="#"><li>Material de Apoio</li></a>
+                <a href="#"><li>Clube Matemático</li></a>
+                <a href="#"><li>Contato</li></a>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <h2 class="titulo-noticia">As novidades da Matemática</h2>
+        <div class="noticias">
+
+            <!-- Card 1 -->
+            <div class="card">
+                <img class="img-capa" src="img/capa.jpg" alt="Um fundo azul escuro com símbolos matemáticos">
+                <h3>Artigo 1 - Por que matemática?</h3>
+                <p>
+                    Como alguém pode gostar de falar sobre matemática? Entenda por que essa ciência é tão bonita e vai muito além das fórmulas da escola.
+                </p>
+                <div class="botoes">
+                    <button class="botão-curtida">👍<span>0</span></button>
+                    <button class="botão-coração">❤️<span>0</span></button>
+                </div>
+                <a href="noticia01.html"> Saiba mais ... </a>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+                <img class="img-capa" src="img/capa.jpg" alt="Um fundo azul escuro com símbolos matemáticos">
+                <h3>Artigo 1 - Por que matemática?</h3>
+                <p>
+                    Como alguém pode gostar de falar sobre matemática? Entenda por que essa ciência é tão bonita e vai muito além das fórmulas da escola.
+                </p>
+                <div class="botoes">
+                    <button class="botão-curtida">👍<span>0</span></button>
+                    <button class="botão-coração">❤️<span>0</span></button>
+                </div>
+                <a href="noticia01.html"> Saiba mais ... </a>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+                <img class="img-capa" src="img/capa.jpg" alt="Um fundo azul escuro com símbolos matemáticos">
+                <h3>Artigo 1 - Por que matemática?</h3>
+                <p>
+                    Como alguém pode gostar de falar sobre matemática? Entenda por que essa ciência é tão bonita e vai muito além das fórmulas da escola.
+                </p>
+                <div class="botoes">
+                    <button class="botão-curtida">👍<span>0</span></button>
+                    <button class="botão-coração">❤️<span>0</span></button>
+                </div>
+                <a href="noticia01.html"> Saiba mais ... </a>
+            </div>
+
+        </div>    
+    </main>
+
+    <footer>
+        <p> Feito por Gbariel Cnateiro Mraques ©</p>
+    </footer>
+</body>
+<script>
+    const botoes = document.querySelectorAll('.botão-curtida');
+    botoes.forEach(botao => {
+        botao.addEventListener('click', botaoClicado);
+    });
+    
+    function botaoClicado(){
+        let texto = event.currentTarget.querySelector('span');
+        texto.textContent++
+    }
+</script>
+</html>
